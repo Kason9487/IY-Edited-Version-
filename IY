@@ -5480,6 +5480,7 @@ Cmdbar.Focused:Connect(function()
 	end)
 end)
 
+ESPenabled2 = false
 ESPenabled = false
 CHMSenabled = false
 
@@ -7688,7 +7689,7 @@ end)
 
 addcmd('esp2',{},function(args, speaker)
 	if not CHMSenabled then
-		ESPenabled22 = true
+		ESPenabled2 = true
 		for i,v in pairs(workspace:GetChildren()) do
 			if v:IsA("Tool") and v:FindFirstChild("Hitbox") then
 				ESP(v.Hitbox)
